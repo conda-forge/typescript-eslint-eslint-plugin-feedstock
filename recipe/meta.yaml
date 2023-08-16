@@ -21,7 +21,7 @@ requirements:
   host:
     - nodejs
     - nodejs !=16.14.2
-    - yarn
+    - yarn <2
   run:
     - nodejs
 
