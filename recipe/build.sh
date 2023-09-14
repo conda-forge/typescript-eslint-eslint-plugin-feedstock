@@ -7,13 +7,22 @@ if [[ "${target_platform}" == "osx-arm64" ]]; then
 fi
 # Don't use pre-built gyp packages
 export npm_config_build_from_source=true
+export NPM_CONFIG_USERCONFIG=/tmp/nonexistentrc
 
 rm $PREFIX/bin/node
 ln -s $BUILD_PREFIX/bin/node $PREFIX/bin/node
 
-cd packages/eslint-plugin
-yarn pack
-yarn licenses generate-disclaimer > ThirdPartyLicenses.txt
-NPM_CONFIG_USERCONFIG=/tmp/nonexistentrc
+# Later install steps need a valid git repository
+git init .
+git config user.email "you@example.com"
+git config user.name "Your Name"
+git add .
+git commit -m "Initial commit" --no-verify --no-gpg-sign
 
-npm install -g ${PKG_NAME}-v${PKG_VERSION}.tgz
+cd packages/eslint-plugin
+yarn install
+pnpm install --prod
+pnpm licenses list --json | pnpm-licenses generate-disclaimer --json-input --output-file=ThirdPartyLicenses.txt
+pnpm pack
+
+npm install -g ${PKG_NAME}-${PKG_VERSION}.tgz
