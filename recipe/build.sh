@@ -21,6 +21,7 @@ git commit -m "Initial commit" --no-verify --no-gpg-sign
 
 cd packages/eslint-plugin
 yarn install
+pnpm link ../rule-schema-to-typescript-types
 pnpm install --prod
 pnpm licenses list --json | pnpm-licenses generate-disclaimer --json-input --output-file=ThirdPartyLicenses.txt
 pnpm pack
