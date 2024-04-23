@@ -1,5 +1,5 @@
 {% set name = "typescript-eslint-eslint-plugin" %}
-{% set version = "7.7.0" %}
+{% set version = "7.7.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/typescript-eslint/typescript-eslint/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 5980c124054d7ae54b68a0feea9e4de1d7c8d4d3ea14f972e8cf5b79b3974261
+  sha256: d5fde61acd69986b84954d13bd56bfd0426dd77ec6f61cf3ec2ded5b1b68adfd
 
 build:
   skip: true  # [win]
@@ -16,10 +16,10 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
     - make
     - nodejs
-    - sysroot_linux-64 2.17  # [linux64]
   host:
     - nodejs
     - pnpm
