@@ -13,14 +13,7 @@ Current build status
 ====================
 
 
-<table><tr>
-    <td>Travis</td>
-    <td>
-      <a href="https://app.travis-ci.com/conda-forge/typescript-eslint-eslint-plugin-feedstock">
-        <img alt="linux" src="https://img.shields.io/travis/com/conda-forge/typescript-eslint-eslint-plugin-feedstock/main.svg?label=Linux">
-      </a>
-    </td>
-  </tr>
+<table>
     
   <tr>
     <td>Azure</td>
@@ -34,13 +27,6 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>linux_64_nodejs18</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=15879&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/typescript-eslint-eslint-plugin-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_nodejs18" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
               <td>linux_64_nodejs20</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=15879&branchName=main">
@@ -48,10 +34,10 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>linux_aarch64_nodejs18</td>
+              <td>linux_64_nodejs22</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=15879&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/typescript-eslint-eslint-plugin-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_nodejs18" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/typescript-eslint-eslint-plugin-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_nodejs22" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -62,10 +48,10 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_nodejs18</td>
+              <td>linux_aarch64_nodejs22</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=15879&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/typescript-eslint-eslint-plugin-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_nodejs18" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/typescript-eslint-eslint-plugin-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_nodejs22" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -76,10 +62,10 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>osx_arm64_nodejs18</td>
+              <td>osx_64_nodejs22</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=15879&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/typescript-eslint-eslint-plugin-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_nodejs18" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/typescript-eslint-eslint-plugin-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_nodejs22" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -87,6 +73,13 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=15879&branchName=main">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/typescript-eslint-eslint-plugin-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_nodejs20" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_arm64_nodejs22</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=15879&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/typescript-eslint-eslint-plugin-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_nodejs22" alt="variant">
                 </a>
               </td>
             </tr>
