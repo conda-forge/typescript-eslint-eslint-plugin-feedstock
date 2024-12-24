@@ -1,5 +1,5 @@
 {% set name = "typescript-eslint-eslint-plugin" %}
-{% set version = "8.18.1" %}
+{% set version = "8.18.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/typescript-eslint/typescript-eslint/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 39496c376b6e5493120052951288bef679d8891f6fe35f4f6a35de1c6ba7931b
+  sha256: 7824ed50fb6d80fa2f19e44446f2b45430a140ca10f15c47515cab7b8cd71399
 
 build:
   skip: true  # [win]
