@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: typescript-eslint-eslint-plugin
-  version: "8.51.0"
+  version: "8.52.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://github.com/typescript-eslint/typescript-eslint/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: 860590652d5a8c79e79b07777cbeeb58bdcdf0b3927df1501db4228da8c99a47
+  sha256: 8c0e185fa11ed532129d198127d046b87b076d2c13adfdcad625a0c8c3e42b41
 
 build:
   number: 0
